@@ -118,8 +118,8 @@ export default function Navigation() {
             {isMobile &&
                 <div className="fixed top-0 left-0 right-0 z-50">
                     <div className="flex flex-row justify-center">
-                        <header className="text-gray-600 body-font w-3/4 border rounded-lg mt-3 bg-white">
-                            <div className="container mx-auto flex p-1 flex-row  justify-between pl-4 pr-4 items-center">
+                        <header className="text-gray-600 body-font w-full m-2 border rounded-md mt-3 bg-white">
+                            <div className="container mx-auto flex p-1 flex-row  justify-between pl-4 pr-4 pt-0 pb-0 items-center">
                                 <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                                     <img
                                         src="/assets/Webgenics-Logo.png"
@@ -129,10 +129,10 @@ export default function Navigation() {
                                 </a>
                                 <MenuOutlined className="
                                 text-2xl
-                                text-primary
+                                text-secondary-300
                                 " onClick={handleToggleDrawer} />
                                 <Drawer
-                                    placement="left"
+                                    placement="right"
                                     closable={false}
                                     onClose={handleToggleDrawer}
                                     visible={isDrawerOpen}
