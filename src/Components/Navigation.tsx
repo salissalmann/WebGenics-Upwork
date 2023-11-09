@@ -87,12 +87,12 @@ export default function Navigation() {
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                                             </svg>
                                         </div>
-                                        <div className="absolute hidden  mt-[-0.25rem] space-y-2 w-80  bg-white text-gray-900 group-hover:block rounded-lg">
+                                        <div className="absolute hidden  mt-[-0.25rem] space-y-2 w-80  bg-white text-gray-900 group-hover:block rounded-lg border">
                                             <a className="block px-4 py-1 w-80 text-left hover:bg-orange-500 hover:text-white cursor-pointer" onClick={() => { handleOptionSelect('/web-development') }}>Website Development Services</a>
-                                            <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white cursor-pointer" href="#">Mobile Application Development Services</a>
-                                            <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white cursor-pointer" href="#">UI/UX Designing Services</a>
-                                            <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white cursor-pointer" href="#">Publication Services</a>
-                                            <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white cursor-pointer" href="#">3D/4D Animations</a>
+                                            <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white cursor-pointer" onClick={() => { handleOptionSelect('/mobile-development') }}>Mobile Application Development Services</a>
+                                            <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white cursor-pointer" onClick={() => { handleOptionSelect('/ui-ux') }}>UI/UX Designing Services</a>
+                                            <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white cursor-pointer" onClick={() => { handleOptionSelect('/publication-services') }}>Publication Services</a>
+                                            <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white cursor-pointer overflow-hidden" href="#">3D/4D Animations</a>
                                         </div>
                                     </div>
                                     <a className="mr-10 text-gray-900 cursor-pointer hover:text-secondary-300">Portfolio</a>
