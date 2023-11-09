@@ -92,11 +92,11 @@ export default function Navigation() {
                                             <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white cursor-pointer" onClick={() => { handleOptionSelect('/mobile-development') }}>Mobile Application Development Services</a>
                                             <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white cursor-pointer" onClick={() => { handleOptionSelect('/ui-ux') }}>UI/UX Designing Services</a>
                                             <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white cursor-pointer" onClick={() => { handleOptionSelect('/publication-services') }}>Publication Services</a>
-                                            <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white cursor-pointer overflow-hidden" href="#">3D/4D Animations</a>
+                                            <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white cursor-pointer overflow-hidden" onClick={() => { handleOptionSelect('/animations') }}>3D/4D Animations</a>
                                         </div>
                                     </div>
                                     <a className="mr-10 text-gray-900 cursor-pointer hover:text-secondary-300">Portfolio</a>
-                                    <a className="mr-10 text-gray-900 cursor-pointer hover:text-secondary-300">Consultation</a>
+                                    <a className="mr-10 text-gray-900 cursor-pointer hover:text-secondary-300" onClick={() => { handleOptionSelect('/consultation') }}>Consultation</a>
                                     <a className="mr-10 text-gray-900 cursor-pointer hover:text-secondary-300" onClick={
                                         () => {
                                             handleOptionSelect('/teams')
@@ -147,7 +147,9 @@ export default function Navigation() {
                                     <div className='flex flex-col p-3 items-center mt-4'>
                                         <div className='text-gray-900 font-oxygen font-bold border
                                         shadow w-full text-center p-2
-                                        '>Home</div>
+                                        '
+                                            onClick={() => { handleOptionSelect('/') }}
+                                        >Home</div>
                                     </div>
                                     <div className="flex flex-col p-3 items-center">
                                         <div className="flex flex-row items-center justify-center gap-2 text-gray-900 font-oxygen font-bold border shadow w-full text-center p-2">
@@ -168,69 +170,79 @@ export default function Navigation() {
                                     </div>
                                     {showServices && (
                                         <div className="flex flex-col p-3 items-center mt-1 gap-1">
-                                            <div className="text-gray-900 font-oxygen font-bold border shadow w-full text-center p-2">
+                                            <div className="text-gray-900 font-oxygen font-bold border shadow w-full text-center p-2"
+                                                onClick={() => {
+                                                    handleOptionSelect(
+                                                        '/web-development'
+                                                    )
+                                                }}
+                                            >
                                                 Website Development Services
                                             </div>
-                                            <div className="text-gray-900 font-oxygen font-bold border shadow w-full text-center p-2">
+                                            <div className="text-gray-900 font-oxygen font-bold border shadow w-full text-center p-2"
+                                                onClick={() => {
+                                                    handleOptionSelect(
+                                                        '/mobile-development'
+                                                    )
+                                                }}
+                                            >
                                                 Mobile Application Development Services
                                             </div>
-                                            <div className="text-gray-900 font-oxygen font-bold border shadow w-full text-center p-2">
+                                            <div className="text-gray-900 font-oxygen font-bold border shadow w-full text-center p-2"
+                                                onClick={() => {
+                                                    handleOptionSelect(
+                                                        '/ui-ux'
+                                                    )
+                                                }}
+                                            >
                                                 UI/UX Designing Services
                                             </div>
-                                            <div className="text-gray-900 font-oxygen font-bold border shadow w-full text-center p-2">
+                                            <div className="text-gray-900 font-oxygen font-bold border shadow w-full text-center p-2"
+                                                onClick={() => {
+                                                    handleOptionSelect(
+                                                        '/publication-services'
+                                                    )
+                                                }}
+                                            >
                                                 Publication Services
                                             </div>
-                                            <div className="text-gray-900 font-oxygen font-bold border shadow w-full text-center p-2">
+                                            <div className="text-gray-900 font-oxygen font-bold border shadow w-full text-center p-2"
+                                                onClick={() => {
+                                                    handleOptionSelect(
+                                                        '/animations'
+                                                    )
+                                                }}
+                                            >
                                                 3D/4D Animations
                                             </div>
                                         </div>
                                     )}                                    <div className='flex flex-col p-3 items-center'>
                                         <div className='text-gray-900 font-oxygen font-bold border
                                         shadow w-full text-center p-2
-                                        '>Case Studies</div>
+                                        '
+                                        >Portfolio</div>
                                     </div>
                                     <div className='flex flex-col p-3 items-center'>
                                         <div className='text-gray-900 font-oxygen font-bold border
-                                        shadow w-full text-center p-2
-                                        '>About us</div>
-                                    </div>
-                                    <div className='flex flex-col p-3 items-center'>
-                                        <div className='text-gray-900 font-oxygen font-bold border
-                                        shadow w-full text-center p-2
-                                        '>Pricing</div>
-                                    </div>
-                                    <div className='flex flex-col p-3 items-center' onClick={toggleinsights}>
-                                        <div className='flex flex-row items-center justify-center gap-2 text-gray-900 font-oxygen font-bold border
-                                        shadow w-full text-center p-2'>
-                                            <div
-                                            >Company</div>
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4
-                                            " style={dropdownIconStylesinsights} onClick={toggleinsights}  >
-                                                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    {showinsights &&
-                                        <div className='flex flex-col p-3 items-center mt-1 gap-1'>
-                                            <div className='text-gray-900 font-oxygen font-bold border
                                         shadow w-full text-center p-2
                                         '
-                                                onClick={
-                                                    () => handleOptionSelect('/teams')
-                                                }
-                                            >Our Team</div>
-                                            <div className='text-gray-900 font-oxygen font-bold border
-                                        shadow w-full text-center p-2
-                                        '>Portfolio</div>
-                                            <div className='text-gray-900 font-oxygen font-bold border
-                                        shadow w-full text-center p-2
-                                        '>Network</div>
-                                        </div>
-                                    }
+                                            onClick={() => { handleOptionSelect('/consultation') }}
+                                        >Consultation</div>
+                                    </div>
                                     <div className='flex flex-col p-3 items-center'>
                                         <div className='text-gray-900 font-oxygen font-bold border
                                         shadow w-full text-center p-2
-                                        '>Contact us</div>
+                                        '
+                                            onClick={() => { handleOptionSelect('/teams') }}
+                                        >Company</div>
+                                    </div>
+
+                                    <div className='flex flex-col p-3 items-center'>
+                                        <div className='text-gray-900 font-oxygen font-bold border
+                                        shadow w-full text-center p-2
+                                        '
+                                            onClick={() => { handleOptionSelect('/contact') }}
+                                        >Contact</div>
                                     </div>
                                     <div className='flex flex-col p-3 items-center'>
                                         <div className='text-gray-900 font-oxygen bg-orange-500  font-bold border

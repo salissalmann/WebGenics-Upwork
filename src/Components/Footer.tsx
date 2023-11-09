@@ -72,25 +72,25 @@ export default function Footer() {
                                 <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">ReactJS Development</a>
                             </li>
                             <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Java Development</a>
+                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">NextJs Development</a>
                             </li>
                             <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">ChatGPT app Development</a>
+                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Cloud Services ( AWS/AZURE )</a>
                             </li>
                             <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Machine learning</a>
+                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Flutter Development</a>
                             </li>
                             <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Big Data</a>
+                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Kotlin Development</a>
                             </li>
                             <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">AI Development</a>
+                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Blender Animations</a>
                             </li>
                             <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin pb-3">Blockchain Consulting</a>
+                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin pb-3">Figma</a>
                             </li>
                             <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin pb-3">Blockchain Development</a>
+                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin pb-3">Adobe</a>
                             </li>
                         </nav>
                     </div>

@@ -9,7 +9,7 @@ import MobileDevelopment from "./Pages/MobileDevelopment";
 import UIUX from "./Pages/UI-UX";
 import Publications from "./Pages/Publications";
 import Animations from "./Pages/Animations";
-
+import Consultation from './Pages/Consultation'
 function App() {
   return (
     <div className="App">
@@ -38,6 +38,10 @@ function App() {
         <Routes>
           <Route path="/animations" element={<Animations />} />
         </Routes>
+        <Routes>
+          <Route path="/consultation" element={<Consultation />} />
+        </Routes>
+
 
 
 

@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
-import Navigation from "../Components/Navigation";
 import Footer from "../Components/Footer";
+import Navigation from "../Components/Navigation";
 
 export default () => {
 
@@ -105,7 +104,8 @@ export default () => {
                         <div className="p-4 lg:w-1/2 md:w-full">
                             <div className="flex border-2 rounded-lg border-secondary-300 border-opacity-50 p-8 sm:flex-row flex-col">
                                 <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-white  flex-shrink-0">
-                                    <img width="48" height="48" src="https://img.icons8.com/color/48/kotlin.png" alt="kotlin" />                                </div>
+                                    <img width="48" height="48" src="https://img.icons8.com/color/48/kotlin.png" alt="kotlin" />
+                                </div>
                                 <div className="flex-grow">
                                     <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Applications using Kotlin</h2>
                                     <p className="leading-relaxed text-sm font-nunito">
