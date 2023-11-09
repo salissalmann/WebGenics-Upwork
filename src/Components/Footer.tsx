@@ -3,8 +3,8 @@ export default function Footer() {
     return (<>
         <footer className="text-white cursor-pointer body-font mt-10">
             <div className="container px-5 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col bg-secondary-300">
-                <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left pl-14">
-                    <a className="flex title-font font-medium items-center md:justify-start  justify-center text-white font-nunito">
+                <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left lg:pl-14 flex-col-reverse">
+                    <a className="flex title-font font-medium items-center  md:justify-start  justify-center text-white font-nunito">
                         <img
                             src="/assets/LogoBlue.png"
                             alt="Webgenics Logo"
@@ -13,10 +13,10 @@ export default function Footer() {
                     </a>
                     <nav className="list-none mb-10">
                         <li className="pb-1">
-                            <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">HeadQuarters: 123 Street Name, City</a>
+                            <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">HeadQuarters: One Ampang Avenue , 68000 Ampang Jaya, Selangor, Malaysia</a>
                         </li>
                         <li className="pb-1">
-                            <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Phone: +1 234 56 78</a>
+                            <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Phone: +60-11-3769-0939</a>
                         </li>
                         <li className="pb-1">
                             <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Email:{" "}

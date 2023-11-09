@@ -32,7 +32,7 @@ export default function Teams() {
             </div >
 
             <section className="flex flex-col items-center justify-center text-gray-600 font-nunito">
-                <div className="container px-2 py-24 mx-auto w-3/4">
+                <div className="container px-2 py-24 mx-auto lg:w-3/4">
                     <div className="flex flex-col text-center w-full mb-4">
                         <h1
                             className="sm:text-3xl text-3xl font-medium title-font mb-4 text-secondary-300"
@@ -52,7 +52,7 @@ export default function Teams() {
 
             <div className="flex flex-wrap -m-4">
                 <div className="lg:w-1/2 sm:w-1/2 bg-secondary-300">
-                    <div className={`relative z-10 w-full p-24`}>
+                    <div className={`relative z-10 w-full p-14 lg:p-24`}>
                         <h1 className={`tracking-widest text-4xl font-oxygen text-white mb-1`}>
                             Mission
                         </h1>
@@ -81,7 +81,7 @@ export default function Teams() {
                 </div>
 
                 <div className="lg:w-1/2 sm:w-1/2 bg-secondary-300">
-                    <div className={`relative z-10 w-full p-24`}>
+                    <div className={`relative z-10 w-full p-14 lg:p-24`}>
                         <h1 className={`tracking-widest text-3xl font-oxygen text-white mb-1`}>
                             Vision
                         </h1>
@@ -133,8 +133,8 @@ export default function Teams() {
                         The webgenics is focused on creating an environment where we can face your biggest challenges together and have a truly rewarding experience.
                     </p>
                     <div className='flex flex-row justify-center'>
-                        <div className="flex flex-wrap -m-4 w-2/3">
-                            <div className="md:w-1/3 ">
+                        <div className="flex flex-wrap -m-4 lg:w-2/3 justify-center">
+                            <div className="md:w-1/3">
                                 <div className="flex flex-col justify-center items-center h-full pt-4 rounded">
                                     <img
                                         src="/assets/HaiderAli.png"
@@ -143,7 +143,9 @@ export default function Teams() {
                                     />
                                     <span className="flex-grow flex flex-col pl-4  bg-gray-100 w-80 pt-2 pb-2">
                                         <span className="title-font font-medium text-gray-900">Haider Ali</span>
-                                        <span className="text-gray-500 text-sm">CBO</span>
+                                        <span className="text-gray-500 text-sm">
+                                            Chief Business Officer
+                                            [ CBO ] </span>
                                     </span>
                                 </div>
                             </div>
@@ -156,7 +158,9 @@ export default function Teams() {
                                     />
                                     <span className="flex-grow flex flex-col pl-4  bg-gray-100 w-80 pt-2 pb-2">
                                         <span className="title-font font-medium text-gray-900">Muhammad Talha Hussain</span>
-                                        <span className="text-gray-500 text-sm">CTO</span>
+                                        <span className="text-gray-500 text-sm">
+                                            Chief Technology Officer
+                                            [ CTO ]</span>
                                     </span>
                                 </div>
                             </div>
@@ -169,7 +173,9 @@ export default function Teams() {
                                     />
                                     <span className="flex-grow flex flex-col pl-4  bg-gray-100 w-80 pt-2 pb-2">
                                         <span className="title-font font-medium text-gray-900">Ali Ammar</span>
-                                        <span className="text-gray-500 text-sm">COO</span>
+                                        <span className="text-gray-500 text-sm">
+                                            Chief Operating Officer
+                                            [ COO ] </span>
                                     </span>
                                 </div>
                             </div>
@@ -186,7 +192,10 @@ export default function Teams() {
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="inline-block w-8 h-8 text-secondary-300 mb-8" viewBox="0 0 975.036 975.036">
                             <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
                         </svg>
-                        <p className="leading-relaxed text-lg">We are a dedicated and knowledgeable team of professionals that emphasizes customer satisfaction. We maintain open and transparent communication channels throughout the development process.</p>
+                        <p className="leading-relaxed text-lg">Webgenics IT Solutions is your comprehensive digital solution platform.
+                            Your digital business needs the right technology to enable it to be flexible, secure and agile.
+                            First we define your desired business outcomes and uncover the true state of your digital business.
+                            We can then help you understand the benefits of a future digital strategy so that together we create a vision for the future and a transformation roadmap.</p>
                         <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
                     </div>
                 </div>

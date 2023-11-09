@@ -17,7 +17,7 @@ export default function Offerings() {
                                 <p className={`leading-relaxed text-white font-nunito text-sm `} >
                                     The whole process is as transparent as possible. We immediately
                                     establish a roadmap, clear KPIs and conditions for their
-                                    implementation, type of reporting, daily events, sync-ups, and
+                                    implementation, reporting matrix, real-time monitoring , sync-ups, and
                                     product testing conditions.
                                 </p>
                             </div>
@@ -49,10 +49,10 @@ export default function Offerings() {
                         <div className="lg:w-1/2 sm:w-1/2">
                             <div className={`px-4 py-7 relative z-10 w-full`}>
                                 <h1 className={`tracking-widest text-3xl font-oxygen text-white mb-1`}>
-                                    No language barrier
+                                    We Speak Your Language
                                 </h1>
                                 <p className={`leading-relaxed text-white font-nunito text-sm`}>
-                                    There is no language barrier, as our employees speak English —
+                                    Webgenics speaks your language, as our employees speak English —
                                     at least B1 level for engineers and C1 level for managers.
                                 </p>
                             </div>
