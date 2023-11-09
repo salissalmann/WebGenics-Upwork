@@ -29,7 +29,7 @@ export default function Teams() {
                             The webgenics is focused on creating an environment where we can face your biggest challenges together and have a truly rewarding experience.
                         </p>
                     </motion.div>
-                </div>g
+                </div>
             </div >
 
             <section className="flex flex-col items-center justify-center text-gray-600 font-nunito">
