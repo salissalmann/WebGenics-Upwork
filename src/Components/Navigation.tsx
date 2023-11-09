@@ -87,36 +87,24 @@ export default function Navigation() {
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                                             </svg>
                                         </div>
-                                        <div className="absolute hidden  mt-1 space-y-2 w-80  bg-white text-gray-900 group-hover:block">
-                                            <a className="block px-4 py-1 w-80 text-left hover:bg-orange-500 hover:text-white" href="#">Website Development Services</a>
-                                            <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white" href="#">Mobile Application Development Services</a>
-                                            <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white" href="#">UI/UX Designing Services</a>
-                                            <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white" href="#">Publication Services</a>
-                                            <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white" href="#">3D/4D Animations</a>
+                                        <div className="absolute hidden  mt-[-0.25rem] space-y-2 w-80  bg-white text-gray-900 group-hover:block rounded-lg">
+                                            <a className="block px-4 py-1 w-80 text-left hover:bg-orange-500 hover:text-white cursor-pointer" onClick={() => { handleOptionSelect('/web-development') }}>Website Development Services</a>
+                                            <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white cursor-pointer" href="#">Mobile Application Development Services</a>
+                                            <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white cursor-pointer" href="#">UI/UX Designing Services</a>
+                                            <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white cursor-pointer" href="#">Publication Services</a>
+                                            <a className="block px-4 py-1 w-80 hover:bg-orange-500 hover:text-white cursor-pointer" href="#">3D/4D Animations</a>
                                         </div>
                                     </div>
-                                    <a className="mr-10 text-gray-900 cursor-pointer">Case Studies</a>
-                                    <a className="mr-10 text-gray-900 cursor-pointer">About us</a>
-                                    <a className="mr-10 text-gray-900 cursor-pointer">Pricing</a>
-                                    <div className="relative group">
-                                        <div className="mr-10 flex flex-row items-center justify-center gap-1">
-                                            <a className="text-gray-900 cursor-pointer">Company</a>
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
-                                                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                            </svg>
-                                        </div>
-                                        <div className="absolute hidden mt-1 space-y-2 bg-white text-gray-900 group-hover:block">
-                                            <a className="block px-4 py-1 w-full text-left hover:bg-orange-500 hover:text-white"
-                                                onClick={
-                                                    () => {
-                                                        handleOptionSelect('/teams')
-                                                    }
-                                                }
-                                            >Our Team</a>
-                                            <a className="block px-4 py-1  hover:bg-orange-500 hover:text-white" href="#">Portfolio</a>
-                                            <a className="block px-4 py-1  hover:bg-orange-500 hover:text-white" href="#">Network</a>
-                                        </div>
-                                    </div>
+                                    <a className="mr-10 text-gray-900 cursor-pointer hover:text-secondary-300">Portfolio</a>
+                                    <a className="mr-10 text-gray-900 cursor-pointer hover:text-secondary-300">Consultation</a>
+                                    <a className="mr-10 text-gray-900 cursor-pointer hover:text-secondary-300" onClick={
+                                        () => {
+                                            handleOptionSelect('/teams')
+                                        }
+                                    }
+                                    >Company</a>
+                                    <a className="mr-10 text-gray-900 cursor-pointer hover:text-secondary-300" onClick={() => { handleOptionSelect('/contact') }}>Contact Us</a>
+
                                 </nav>
                                 <button className="inline-flex items-center bg-secondary-100 border-0 text-white text-sm py-2 px-4 f rounded-2xl mt-4 md:mt-0">
                                     Get in Touch

@@ -18,42 +18,42 @@ export default function
                 <div className="container mx-auto flex flex-wrap">
                     <div className="flex flex-wrap w-full lg:pt-10">
                         <div className="lg:w-1/2 md:w-1/2 md:pr-10 md:py-6 p-12 md:p-24">
-                            <img
-                                loading="lazy"
-                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/f42ae3e2-724a-408e-8dcd-ee1e6b808bc6?apiKey=7655e50a14c74a62b7c703afca66aadd&"
-                                alt="Webgenics Logo"
-                                className="h-12 w-15 md:w-24 md:h-24 pb-3"
-                            />
-
                             <h1 className={`tracking-widest leading-relaxed md:text-2xl lg:text-3xl font-oxygen text-white mb-4`}>
-                                Graphical user interface
-                                for robot operation
+                                PRINTMATE: YOUR ONE-STOP PRINTING SOLUTIONS
                             </h1>
                             <p className="leading-relaxed text-white mb-10">
-                                WebGenics developed a graphic user interface
-                                (GUI) that helps to communicate with the robot
-                                Alfred, an automated robotic arm.
+                                PrintMate is your go-to online platform for all your printing needs. Designed and developed using the MERN stack, this user-friendly website simplifies the process of ordering banners, business cards, and more. With seamless quotation requests and efficient email integration, PrintMate is your trusted partner for high-quality printing services.
                             </p>
+
                             <div className="flex flex-wrap gap-3">
                                 <div className="justify-center text-white font-oxygen text-lg leading-7 self-center whitespace-nowrap bg-primary px-10 py-1">
-                                    Redis
+                                    AWS
                                 </div>
                                 <div className="justify-center text-white font-oxygen text-lg leading-7 self-center whitespace-nowrap bg-blue-500 px-10 py-1">
                                     React
                                 </div>
                                 <div className="justify-center text-white font-oxygen text-lg leading-7 self-center whitespace-nowrap bg-orange-500 px-10 py-1">
-                                    Ruby on Rails
+                                    Node.Js
                                 </div>
                                 <div className="justify-center text-white font-oxygen text-lg leading-7 self-center whitespace-nowrap bg-yellow-500 px-10 py-1">
-                                    jQuery
+                                    Express.Js
                                 </div>
                                 <div className="justify-center text-white font-oxygen text-lg leading-7 self-center whitespace-nowrap bg-purple-500 px-10 py-1">
-                                    Sidekiq
+                                    MongoDB
+                                </div>
+                                <div className="justify-center text-white font-oxygen text-lg leading-7 self-center whitespace-nowrap bg-black px-10 py-1">
+                                    Vercel
+                                </div>
+                                <div className="justify-center text-white font-oxygen text-lg leading-7 self-center whitespace-nowrap bg-green-500 px-10 py-1">
+                                    S3 Bucket
+                                </div>
+                                <div className="justify-center text-white font-oxygen text-lg leading-7 self-center whitespace-nowrap bg-red-500 px-10 py-1">
+                                    Github Actions
                                 </div>
                             </div>
                         </div>
-                        <img className="lg:w-1/2 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" loading="lazy"
-                            src="/assets/Project1.png"
+                        <img className="lg:w-1/2 md:w-1/2 object-cover object-center  md:mt-0 mt-12" loading="lazy"
+                            src="/assets/Printmate.png"
                             alt="Webgenics Logo"
                         />
                     </div>
@@ -63,22 +63,22 @@ export default function
                 <div className="container mx-auto flex flex-wrap">
                     <div className="flex flex-wrap w-full lg:pt-10">
                         <img className="lg:w-1/2 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" loading="lazy"
-                            src="/assets/Project2.png"
+                            src="/assets/PlatesKeys.png"
                             alt="Webgenics Logo"
                         />
 
                         <div className="lg:w-1/2 md:w-1/2 md:pr-10 md:py-6 p-12 md:p-24">
-                            <h1 className={`tracking-widest leading-relaxed md:text-2xl lg:text-3xl font-oxygen text-white mb-4`}>
-                                IoT application with
-                                sensors for industrial
-                                fridge monitoring
+                            <h1 className={`tracking-widest leading-relaxed md:text-2xl lg:text-3xl font-oxygen text-white mb-4 capitalize`}>
+                                PLATES N KEYS FOR CARS
                             </h1>
                             <p className="leading-relaxed text-white mb-10">
-                                An IoT solution for HoReCa venues with the
-                                option to monitor the work of industrial
-                                (commercial) refrigerators online, get instant
-                                alerts on urgent issues and manage historical
-                                data.
+                                Plates N Keys For Cars is a website that allows
+                                users to order custom license plates and keys for
+                                their vehicles. This website was developed using
+                                the MERN stack and features a user-friendly
+                                interface with a simple ordering process. Users
+                                can also request a quote for their custom
+                                license plates and keys.
                             </p>
                             <div className="flex flex-wrap gap-3">
                                 <div className="justify-center text-white font-oxygen text-lg leading-7 self-center whitespace-nowrap bg-primary px-10 py-1">
@@ -111,39 +111,38 @@ export default function
                         <div className="lg:w-1/2 md:w-1/2 md:pr-10 md:py-6 p-12 md:p-24">
 
                             <h1 className={`tracking-widest leading-relaxed md:text-2xl lg:text-3xl font-oxygen text-white mb-4`}>
-                                Innovative big data
-                                trading platform
+                                UI/UX FUTCOIN
                             </h1>
                             <p className="leading-relaxed text-white mb-10">
-                                A blockchain-based web and mobile platform that
-                                allows companies and individuals to buy and sell
-                                big data sets securely through a private digital
-                                identity and pay with Bitcoin.
+                                Futcoin is a cryptocurrency that is used in the
+                                FIFA gaming community. This website was
+                                developed using the MERN stack and features a
+                                user-friendly interface with a simple ordering
+                                process. Intergerated with Paypal and Stripe.
                             </p>
                             <div className="flex flex-wrap gap-3">
                                 <div className="justify-center text-white font-oxygen text-lg leading-7 self-center whitespace-nowrap bg-secondary-300 px-10 py-1">
-                                    BlockChain
+                                    PayPal
                                 </div>
                                 <div className="justify-center text-white font-oxygen text-lg leading-7 self-center whitespace-nowrap bg-blue-500 px-10 py-1">
-                                    Git
+                                    React
                                 </div>
                                 <div className="justify-center text-black font-oxygen text-lg leading-7 self-center whitespace-nowrap bg-white px-10 py-1">
-                                    Postgre SQL
+                                    Stripe
                                 </div>
                                 <div className="justify-center text-white font-oxygen text-lg leading-7 self-center whitespace-nowrap bg-yellow-500 px-10 py-1">
                                     Amazon Services
                                 </div>
                                 <div className="justify-center text-white font-oxygen text-lg leading-7 self-center whitespace-nowrap bg-purple-500 px-10 py-1">
-                                    Bitcoin Core
+                                    MongoDB
                                 </div>
                                 <div className="justify-center text-white font-oxygen text-lg leading-7 self-center whitespace-nowrap bg-green-500 px-10 py-1">
-                                    React
+                                    Next.Js
                                 </div>
-
                             </div>
                         </div>
                         <img className="lg:w-1/2 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" loading="lazy"
-                            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/1121a03d-6339-4dc9-9f9b-2c42fe9dfad9?apiKey=7655e50a14c74a62b7c703afca66aadd&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/1121a03d-6339-4dc9-9f9b-2c42fe9dfad9?apiKey=7655e50a14c74a62b7c703afca66aadd&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/1121a03d-6339-4dc9-9f9b-2c42fe9dfad9?apiKey=7655e50a14c74a62b7c703afca66aadd&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/1121a03d-6339-4dc9-9f9b-2c42fe9dfad9?apiKey=7655e50a14c74a62b7c703afca66aadd&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/1121a03d-6339-4dc9-9f9b-2c42fe9dfad9?apiKey=7655e50a14c74a62b7c703afca66aadd&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/1121a03d-6339-4dc9-9f9b-2c42fe9dfad9?apiKey=7655e50a14c74a62b7c703afca66aadd&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/1121a03d-6339-4dc9-9f9b-2c42fe9dfad9?apiKey=7655e50a14c74a62b7c703afca66aadd&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/1121a03d-6339-4dc9-9f9b-2c42fe9dfad9?apiKey=7655e50a14c74a62b7c703afca66aadd&"
+                            srcSet="/assets/FUTCOIN.png"
                             alt="Webgenics Logo"
                         />
                     </div>

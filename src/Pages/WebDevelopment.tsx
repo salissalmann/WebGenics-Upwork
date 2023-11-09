@@ -1,0 +1,131 @@
+import { useState, useEffect } from "react";
+import Navigation from "../Components/Navigation";
+import Footer from "../Components/Footer";
+
+export default () => {
+
+
+    return (
+        <>
+            <div className="bg-gray-900">
+                <section className="relative">
+                    <Navigation />
+                    <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8 h-1/2">
+                        <div className="space-y-10 max-w-4xl mx-auto text-center">
+                            <h2 className="text-4xl text-white font-extrabold mx-auto md:text-5xl mt-3">
+                                Custom Web App Development Services
+                            </h2>
+                            <p className="max-w-2xl mx-auto text-gray-400">
+                                Choose the best for your web solutions with our well-designed and bespoke web development services. At WebGenics, we deliver tech excellence tailored to your unique business objectives.
+                            </p>
+                            <form
+                                onSubmit={(e) => e.preventDefault()}
+                                className="justify-center items-center gap-x-3 sm:flex">
+                                <button className="flex items-center justify-center gap-x-2 py-2.5 px-4 mt-3 w-full text-sm text-white font-medium bg-primary hover:bg-sky-400 active:bg-sky-600 duration-150 rounded-lg sm:mt-0 sm:w-auto">
+                                    Get in touch
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
+                                        <path fillRule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z" clipRule="evenodd" />
+                                    </svg>
+                                </button>
+                            </form>
+                            <div className="flex justify-center items-center gap-x-4 text-gray-400 text-sm">
+                                <div className="flex">
+                                    <svg className="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" /></svg>
+                                    <svg className="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" /></svg>
+                                    <svg className="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" /></svg>
+                                    <svg className="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" /></svg>
+                                    <svg className="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" /></svg>
+                                </div>
+                                <p><span className="text-gray-100">5.0</span> by over 200 users</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="absolute inset-0 m-auto max-w-xs h-[357px] blur-[118px] sm:max-w-md md:max-w-lg" style={{ background: "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, #00008B 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)" }}></div>
+                </section>
+            </div>
+            <div className="flex justify-center">
+                <section className="text-gray-600 body-font lg:w-2/3 border mt-[-5rem] bg-white rounded">
+                    <div className="container px-5 py-12 mx-auto">
+                        <div className="flex flex-col text-center w-full">
+                            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">What Is Custom Web App Development</h1>
+                            <p className="lg:w-2/3 mx-auto leading-relaxed text-base font-nunito">Custom web development is a surefire way to get the solution that is fully aligned with your business needs. By building unique web apps, you establish a direct rapport with the customer and add a personal touch to your brand image. Our team of certified web developers delivers high-performing, stable and secure solutions that support mission-critical workflows and deliver value through web platforms.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section className="text-gray-600 body-font p-10 mt-8 mb-8 ">
+                <div className="container px-2  mx-auto flex flex-wrap">
+                    <div className="flex flex-wrap -m-4">
+                        <div className="p-4 lg:w-1/2 md:w-full">
+                            <div className="text-5xl">
+                                Bespoke Web Software Services for Your Business
+                            </div>
+                        </div>
+                        <div className="p-4 lg:w-1/2 md:w-full">
+                            <div className="text-md font-nunito">
+                                At our custom web development company, we pride ourselves on delivering top-quality services that are tailored to our clients' needs and business goals. Our team is committed to working closely with you to understand your requirements and deliver solutions that meet or exceed your expectations. We understand that a strong online presence is crucial for businesses of all sizes, which is why we provide tailored solutions for:                    </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="text-gray-600 body-font">
+                <div className="container px-8  mx-auto flex flex-wrap">
+                    <div className="flex flex-wrap -m-4">
+                        <div className="p-4 lg:w-1/2 md:w-full">
+                            <div className="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col bg-secondary-300">
+                                <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-white text-indigo-500 flex-shrink-0">
+                                    <img width="50" height="50" src="https://img.icons8.com/isometric-line/50/light.png" alt="light" />                                </div>
+                                <div className="flex-grow">
+                                    <h2 className="text-white text-lg title-font font-medium mb-3">Web Solutions Tailored to Your Branding</h2>
+                                    <p className="leading-relaxed text-sm font-nunito text-white">Bespoke software allows you to reflect your corporate style through an aesthetic interface and impeccable customer experience. Showcase your unique products and services beyond drag-n-drop templates and generic software.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="p-4 lg:w-1/2 md:w-full">
+                            <div className="flex border-2 rounded-lg border-secondary-300 border-opacity-50 p-8 sm:flex-row flex-col">
+                                <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-white  flex-shrink-0">
+                                    <img width="50" height="50" src="https://img.icons8.com/ios/50/define-location--v1.png" alt="define-location--v1" />                                </div>
+                                <div className="flex-grow">
+                                    <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Customer-Driven Design</h2>
+                                    <p className="leading-relaxed text-sm font-nunito">Leverage our custom web software development service to support your customers’ journey with an app architecture that clicks with their demands. Tailored solutions deliver real business results and amplify your marketing and business initiatives.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="p-4 lg:w-1/2 md:w-full">
+                            <div className="flex border-2 rounded-lg border-secondary-300 border-opacity-50 p-8 sm:flex-row flex-col">
+                                <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-white  flex-shrink-0">
+                                    <img width="80" height="80" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-flexibility-martial-arts-flaticons-lineal-color-flat-icons.png" alt="external-flexibility-martial-arts-flaticons-lineal-color-flat-icons" />
+                                </div>
+                                <div className="flex-grow">
+                                    <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Scalabilty</h2>
+                                    <p className="leading-relaxed text-sm font-nunito">
+                                        Enable your tech assets to grow along with your business. Custom solutions allow you to ramp up or down your load requirements on demand without compromising performance or disrupting user experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="p-4 lg:w-1/2 md:w-full">
+                            <div className="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col bg-secondary-300">
+                                <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-white text-indigo-500 flex-shrink-0">
+                                    <img width="80" height="80" src="https://img.icons8.com/dotty/80/private2.png" alt="private2" />
+                                </div>
+                                <div className="flex-grow">
+                                    <h2 className="text-white text-lg title-font font-medium mb-3">Security</h2>
+                                    <p className="leading-relaxed text-sm font-nunito text-white">
+                                        Unique software is fully compliant with any regulation your business is subject to. Be it HIPAA or PCI-DSS, custom applications accommodate your security needs with well-defined information security management systems and policies.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <Footer />
+
+        </>
+    )
+}
