@@ -34,7 +34,6 @@ export default function Navigation() {
     };
 
     const [showServices, setShowServices] = useState(false)
-    const [showinsights, setshowinsights] = useState(false)
     const toggleServices = () => {
         setShowServices(!showServices);
     };
@@ -43,17 +42,6 @@ export default function Navigation() {
         transition: 'transform 0.3s ease',
         transform: showServices ? 'rotate(180deg)' : 'rotate(0deg)',
     };
-
-    const toggleinsights = () => {
-        setshowinsights(!showinsights);
-    };
-
-    const dropdownIconStylesinsights = {
-        transition: 'transform 0.3s ease',
-        transform: showinsights ? 'rotate(180deg)' : 'rotate(0deg)',
-    };
-
-
 
     const Navigate = useNavigate()
 

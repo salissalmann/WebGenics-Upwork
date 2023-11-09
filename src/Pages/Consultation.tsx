@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import Footer from '../Components/Footer'
 import Navigation from '../Components/Navigation'
-import Steps from '../Components/Steps'
 
 export default function Teams() {
     return (

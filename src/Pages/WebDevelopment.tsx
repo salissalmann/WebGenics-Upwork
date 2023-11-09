@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
-import Navigation from "../Components/Navigation";
 import Footer from "../Components/Footer";
+import Navigation from "../Components/Navigation";
 
 export default () => {
 
