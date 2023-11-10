@@ -15,6 +15,7 @@ import { Particles } from 'react-tsparticles'
 import { Engine } from "tsparticles-engine";
 
 export default function Homepage(this: any) {
+    window.scrollTo(0, 0);
 
     const particlesInit = useCallback(async (engine: Engine) => {
         await loadFull(engine)
