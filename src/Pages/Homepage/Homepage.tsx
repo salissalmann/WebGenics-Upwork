@@ -118,7 +118,7 @@ export default function Homepage(this: any) {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.75 }}
                     >
-                        <h1 className="text-5xl font-bold text-center text-white mt-20 pt-20 ">
+                        <h1 className="text-5xl font-bold text-center text-white mt-20 p-5 lg:p-0 pt-20  ">
                             We help companies
                             <br />
                             <span className="text-secondary-100">digitalize </span>
