@@ -32,7 +32,7 @@ export default function Homepage(this: any) {
             >
                 <Navigation />
             </motion.div>
-            <div className="flex flex-col items-center justify-center font-oxygen self-stretch  w-full  max-md:max-w-full bg-cover bg-center bg-no-repeat bg-[url('/assets/Cover.png')] pb-20 h-[100vh] lg:h-[50vh]">
+            <div className="flex flex-col items-center justify-center font-oxygen self-stretch  w-full  max-md:max-w-full bg-cover bg-center bg-no-repeat bg-[url('/assets/Cover.png')] pb-20 h-[100vh] lg:h-[60vh]">
                 <Particles
                     className="w-full h-full relative z-1"
                     id="tsparticles"
@@ -112,13 +112,13 @@ export default function Homepage(this: any) {
                     }}
 
                 />
-                <div className="absolute">
+                <div className="absolute p-5 lg:p-0">
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.75 }}
                     >
-                        <h1 className="text-5xl font-bold text-center text-white mt-20 p-5 lg:p-0 pt-20  ">
+                        <h1 className="text-5xl font-bold text-center text-white mt-20 pt-24">
                             We help companies
                             <br />
                             <span className="text-secondary-100">digitalize </span>
