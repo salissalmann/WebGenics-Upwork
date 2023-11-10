@@ -87,11 +87,19 @@ export default function Homepage() {
                 className="text-center"
             >
                 <div className="w-12 h-12 rounded shadow-md bg-white flex justify-center items-center transform -rotate-3 mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="20">
-                        <path fill="none" stroke="#000" strokeWidth="2" d="M1 1l14 14 14-14" />
-                        <path fill="#F9BABA" d="M15.5 1C10.8 1
-                        7 4.8 7 9.5S10.8 18 15.5 18 24 14.2 24 9.5 20.2 1 15.5 1z" />
-                    </svg>
+                    {label ===
+                        "Years of Experience" ? (
+                        <img width="40" height="40" src="https://img.icons8.com/ios/50/customer-insight--v1.png" alt="customer-insight--v1" />) : <></>
+                    }
+                    {label ===
+                        "Clients Worldwide" ? (
+                        <img width="35" height="35" src="https://img.icons8.com/ios/50/worldwide-location--v1.png" alt="worldwide-location--v1" />) : <></>
+                    }
+                    {label ===
+                        "Successful Projects" ? (
+                        <img width="35" height="35" src="https://img.icons8.com/ios/50/000000/rocket.png" alt="rocket" />) : <></>
+                    }
+
                 </div>
                 <motion.h2 className="font-extrabold mb-2">
                     <span className="text-4xl font-oxygen">

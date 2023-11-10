@@ -25,13 +25,7 @@ export default function Homepage(this: any) {
     return (
         <>
 
-            <motion.div
-                initial={{ y: -1000, scale: 0.5 }}
-                animate={{ y: 0, scale: 1 }}
-                transition={{ duration: 0.75 }}
-            >
-                <Navigation />
-            </motion.div>
+            <Navigation />
             <div className="flex flex-col items-center justify-center font-oxygen self-stretch  w-full  max-md:max-w-full bg-cover bg-center bg-no-repeat bg-[url('/assets/Cover.png')] pb-20 h-[100vh] lg:h-[60vh]">
                 <Particles
                     className="w-full h-full relative z-1"
