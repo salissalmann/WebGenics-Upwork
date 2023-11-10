@@ -21,6 +21,15 @@ export default function Homepage(this: any) {
     }, [])
 
     const particlesLoaded = useCallback(async () => { }, [])
+    const staggerChildren = {
+        hidden: { opacity: 0 },
+        show: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.5,
+            },
+        },
+    };
 
     return (
         <>
@@ -142,16 +151,92 @@ export default function Homepage(this: any) {
                 </div>
             </div >
 
-            <CounterSection />
-            <Services />
-            <Offerings />
-            <ReviewSection />
-            <TechnicalSection />
-            <Projects />
-            <Steps />
-            <FAQs />
-            <Footer />
+            <motion.section
+                variants={staggerChildren}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.25 }}
+            >
+                <CounterSection />
+            </motion.section>
 
+            <motion.section
+                variants={staggerChildren}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.25 }}
+            >
+                <Services />
+            </motion.section>
+            <motion.section
+                variants={staggerChildren}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.25 }}
+            >
+                <Offerings />
+            </motion.section>
+
+            <motion.section
+                variants={staggerChildren}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.25 }}
+            >
+                <ReviewSection />
+            </motion.section>
+
+            <motion.section
+                variants={staggerChildren}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.25 }}
+            >
+                <TechnicalSection />
+
+            </motion.section>
+
+            <motion.section
+                variants={staggerChildren}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.25 }}
+            >
+                <Projects />
+
+            </motion.section>
+
+            <motion.section
+                variants={staggerChildren}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.25 }}
+            >
+                <Steps />
+
+            </motion.section>
+
+            <motion.section
+                variants={staggerChildren}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.25 }}
+            >
+                <FAQs />
+
+            </motion.section>
+
+
+            <motion.section
+                variants={staggerChildren}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.25 }}
+            >
+
+                <Footer />
+
+            </motion.section>
 
 
 

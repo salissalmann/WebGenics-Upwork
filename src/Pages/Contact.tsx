@@ -3,6 +3,8 @@ import Navigation from '../Components/Navigation'
 
 
 export default function Contact() {
+    window.scrollTo(0, 0);
+
     return (
         <>
             <Navigation />

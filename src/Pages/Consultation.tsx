@@ -3,6 +3,8 @@ import Footer from '../Components/Footer'
 import Navigation from '../Components/Navigation'
 
 export default function Teams() {
+    window.scrollTo(0, 0);
+
     return (
         <>
             <Navigation />
