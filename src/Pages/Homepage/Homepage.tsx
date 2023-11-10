@@ -112,7 +112,7 @@ export default function Homepage(this: any) {
                     }}
 
                 />
-                <div className="absolute p-5 lg:p-0">
+                <div className="absolute p-2 lg:p-0">
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
