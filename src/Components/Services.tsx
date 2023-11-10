@@ -14,14 +14,9 @@ const Services = () => {
                 <div className="flex flex-wrap -m-4">
                     <div className="lg:w-1/3 sm:w-1/2">
                         <div className={`px-8 py-14 relative z-10 w-full bg-tertiary-200`}>
-                            <img
-                                loading="lazy"
-                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/32a2c9c5-2156-4396-8cba-30e96e8bc59a?apiKey=7655e50a14c74a62b7c703afca66aadd&"
-                                alt="Webgenics Logo"
-                                className="h-15 w-20"
-                            />
-                            <h1 className={`tracking-widest text-2xl font-oxygen text-white mb-1`}>
-                                Software Development
+                            <img width="50" height="50" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo" />
+                            <h1 className={`tracking-widest text-2xl font-oxygen text-white mb-1 mt-3`}>
+                                Web Development
                             </h1>
                             <p className={`leading-relaxed text-white font-nunito text-sm`}>
                                 Revolutionize your business with Webgenics' bespoke software solutions. Our expert team ensures tailored, efficient, and quality software for your success.
@@ -30,13 +25,8 @@ const Services = () => {
                     </div>
                     <div className="lg:w-1/3 sm:w-1/2">
                         <div className={`px-8 py-14 relative z-10 w-full bg-tertiary-300`}>
-                            <img
-                                loading="lazy"
-                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/ae1c11cf-3fd2-41e7-afb0-25c4ffa72224?apiKey=7655e50a14c74a62b7c703afca66aadd&"
-                                alt="Webgenics Logo"
-                                className="h-15 w-20"
-                            />
-                            <h1 className={`tracking-widest text-2xl font-oxygen text-black mb-1`}>
+                            <img width="50" height="50" src="https://img.icons8.com/office/40/figma.png" alt="figma" />
+                            <h1 className={`tracking-widest text-2xl font-oxygen text-black mb-1 mt-3`}>
                                 UI/UX Design
                             </h1>
                             <p className={`leading-relaxed text-black font-nunito text-sm`}>
@@ -45,66 +35,46 @@ const Services = () => {
                     </div>
                     <div className="lg:w-1/3 sm:w-1/2">
                         <div className={`px-8 py-14 relative z-10 w-full bg-tertiary-100`}>
-                            <img
-                                loading="lazy"
-                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/c7da3736-8841-464b-adf3-a03393539b01?apiKey=7655e50a14c74a62b7c703afca66aadd&"
-                                alt="Webgenics Logo"
-                                className="h-15 w-20"
-                            />
-                            <h1 className={`tracking-widest text-2xl font-oxygen text-black mb-1`}>
-                                Software Testing
+                            <img width="48" height="48" src="https://img.icons8.com/pulsar-line/48/backend-development.png" alt="backend-development" />
+                            <h1 className={`tracking-widest text-2xl font-oxygen text-black mb-1 mt-3`}>
+                                Mobile Development
                             </h1>
                             <p className={`leading-relaxed text-black font-nunito text-sm`}>
-                                Ensure software reliability with Webgenics' comprehensive testing services. Our skilled QA team guarantees bug-free, high-performance applications for a seamless user experience.                            </p>
+                                Enhance your business with Webgenics' mobile app development services. Our team delivers robust, scalable, and secure apps for iOS and Android platforms.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div className="flex flex-wrap -m-4 mt-[-1rem]">
                     <div className="lg:w-1/3 sm:w-1/2">
                         <div className={`px-8 py-14 relative z-10 w-full bg-tertiary-300`}>
-                            <img
-                                loading="lazy"
-                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/30e197e9-056a-459a-a380-1eed662253c0?apiKey=7655e50a14c74a62b7c703afca66aadd&"
-                                alt="Webgenics Logo"
-                                className="h-15 w-20"
-                            />
-                            <h1 className={`tracking-widest text-2xl font-oxygen text-black mb-1`}>
-                                Internet of Things
+                            <img width="50" height="50" src="https://img.icons8.com/ios/50/us-news.png" alt="us-news" />
+                            <h1 className={`tracking-widest text-2xl font-oxygen text-black mb-1 mt-3`}>
+                                Publication Services
                             </h1>
                             <p className="text-black font-nunito text-sm">
-                                Unlock the potential of the Internet of Things (IoT) with Webgenics. Our IoT solutions connect and optimize devices for enhanced data insights and improved efficiency.
+                                Accelerate your research with Webgenics' publication services. Our experts help you publish in top journals and conferences, ensuring your research reaches the right audience.
                             </p>
                         </div>
                     </div>
                     <div className="lg:w-1/3 sm:w-1/2">
                         <div className={`px-8 py-14 relative z-10 w-full bg-tertiary-100`}>
-                            <img
-                                loading="lazy"
-                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/f8237063-f788-455a-9586-e166e2887592?apiKey=7655e50a14c74a62b7c703afca66aadd&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f8237063-f788-455a-9586-e166e2887592?apiKey=7655e50a14c74a62b7c703afca66aadd&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f8237063-f788-455a-9586-e166e2887592?apiKey=7655e50a14c74a62b7c703afca66aadd&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f8237063-f788-455a-9586-e166e2887592?apiKey=7655e50a14c74a62b7c703afca66aadd&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f8237063-f788-455a-9586-e166e2887592?apiKey=7655e50a14c74a62b7c703afca66aadd&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f8237063-f788-455a-9586-e166e2887592?apiKey=7655e50a14c74a62b7c703afca66aadd&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f8237063-f788-455a-9586-e166e2887592?apiKey=7655e50a14c74a62b7c703afca66aadd&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f8237063-f788-455a-9586-e166e2887592?apiKey=7655e50a14c74a62b7c703afca66aadd&"
-                                alt="Webgenics Logo"
-                                className="h-15 w-20"
-                            />
-                            <h1 className={`tracking-widest text-2xl font-oxygen text-black mb-1`}>
-                                Cyber Security
+                            <img width="50" height="50" src="https://img.icons8.com/fluency/48/animation-rig.png" alt="animation-rig" />
+                            <h1 className={`tracking-widest text-2xl font-oxygen text-black mb-1 mt-3`}>
+                                3D/4D Animations
                             </h1>
                             <p className="text-black font-nunito text-sm">
-                                Safeguard your digital assets with Webgenics' robust cybersecurity services. Our experts protect your data, networks, and systems, ensuring peace of mind in an increasingly connected world.
+                                Bring your ideas to life with Webgenics' 3D/4D animation services. Our team creates stunning visuals and immersive experiences for your business.
                             </p>
                         </div>
                     </div>
                     <div className="lg:w-1/3 sm:w-1/2">
                         <div className={`px-8 py-14 relative z-10 w-full bg-tertiary-200`}>
-                            <img
-                                loading="lazy"
-                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/36a549df-40ce-4ee4-80b2-dfba6db60854?apiKey=7655e50a14c74a62b7c703afca66aadd&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/36a549df-40ce-4ee4-80b2-dfba6db60854?apiKey=7655e50a14c74a62b7c703afca66aadd&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/36a549df-40ce-4ee4-80b2-dfba6db60854?apiKey=7655e50a14c74a62b7c703afca66aadd&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/36a549df-40ce-4ee4-80b2-dfba6db60854?apiKey=7655e50a14c74a62b7c703afca66aadd&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/36a549df-40ce-4ee4-80b2-dfba6db60854?apiKey=7655e50a14c74a62b7c703afca66aadd&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/36a549df-40ce-4ee4-80b2-dfba6db60854?apiKey=7655e50a14c74a62b7c703afca66aadd&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/36a549df-40ce-4ee4-80b2-dfba6db60854?apiKey=7655e50a14c74a62b7c703afca66aadd&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/36a549df-40ce-4ee4-80b2-dfba6db60854?apiKey=7655e50a14c74a62b7c703afca66aadd&"
-                                alt="Webgenics Logo"
-                                className="h-15 w-20"
-                            />
-                            <h1 className={`tracking-widest text-2xl font-oxygen text-white mb-1`}>
-                                AI & Automation
+                            <img width="48" height="48" src="https://img.icons8.com/fluency/48/consultation.png" alt="consultation" />                            <h1 className={`tracking-widest text-2xl font-oxygen text-white mb-1 mt-3`}>
+                                Consultation
                             </h1>
                             <p className="text-white font-nunito text-sm">
-                                Empower your business with AI and Automation solutions from Webgenics. Our cutting-edge technology streamlines processes and enhances decision-making, driving efficiency and innovation.
+                                Get expert advice on your business challenges. Our team helps you identify the right technology, process, and strategy to achieve your business goals.
                             </p>
                         </div>
                     </div>
