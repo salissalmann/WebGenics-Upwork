@@ -1,5 +1,6 @@
-
+import { useNavigate } from "react-router-dom"
 export default function Footer() {
+    const navigate = useNavigate()
     return (<>
         <footer className="text-white cursor-pointer body-font mt-10">
             <div className="container px-5 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col bg-secondary-300">
@@ -16,46 +17,43 @@ export default function Footer() {
                             <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">HeadQuarters: One Ampang Avenue , 68000 Ampang Jaya, Selangor, Malaysia</a>
                         </li>
                         <li className="pb-1">
-                            <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Phone: +60-11-3769-0939</a>
+                            <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin"
+                                href="https://wa.me/601137690939"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >Phone: +60-11-37690939</a>
                         </li>
                         <li className="pb-1">
                             <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Email:{" "}
                                 <span className="text-secondary-100">
-                                    info@webgenics.com</span></a>
+                                    inquiry@webgenicsitsolutions.com</span></a>
                         </li>
 
                     </nav>
                 </div>
                 <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
                     <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 className="title-font font-medium text-white font-nunito tracking-widest text-lg mb-3">Services</h2>
+                        <h2 className="title-font font-medium text-white font-nunito tracking-widest text-lg mb-3"
+                            onClick={() => navigate('/services')}
+                        >Services</h2>
                         <nav className="list-none mb-10">
                             <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin pb-3">Business Analysis</a>
+                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin" onClick={() => navigate('/mobile-development')}>Mobile App Development</a>
                             </li>
                             <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">UI / UX design</a>
+                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin" onClick={() => navigate('/web-development')}>Web Development</a>
                             </li>
                             <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Frontend Development</a>
+                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin" onClick={() => navigate('/ui-ux')}>UI/UX Design</a>
                             </li>
                             <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Backend Development</a>
+                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin" onClick={() => navigate('/animations')}>Animations</a>
                             </li>
                             <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Testing & QA services</a>
+                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin" onClick={() => navigate('/publication-services')}>Publication Services</a>
                             </li>
                             <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Enterprise Software Development</a>
-                            </li>
-                            <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Startup Software Development</a>
-                            </li>
-                            <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">SaaS Development</a>
-                            </li>
-                            <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Web Development Services</a>
+                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin" onClick={() => navigate('/consultation')}>Consultation</a>
                             </li>
                         </nav>
                     </div>
@@ -130,16 +128,16 @@ export default function Footer() {
                         <h2 className="title-font font-medium text-white font-nunito tracking-widest text-lg mb-3">Company</h2>
                         <nav className="list-none mb-10">
                             <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">About Us</a>
+                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin" onClick={() => navigate('/company')}>Team</a>
                             </li>
                             <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Contact Us</a>
+                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin" onClick={() => navigate('/portfolio')}>Portfolio</a>
                             </li>
                             <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Testimonials</a>
+                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito pb-3 font-thin" onClick={() => navigate('/contact')}>Contact</a>
                             </li>
                             <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin">Pricing</a>
+                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito pb-3" onClick={() => navigate('/quotation')}>Request Quotation</a>
                             </li>
                         </nav>
                     </div>

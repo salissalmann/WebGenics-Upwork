@@ -86,13 +86,6 @@ export default function TechnicalBenfits() {
                         </div>
                     </div>
 
-                    <div className="lg:w-1/2 sm:w-1/2">
-                        <div className={`relative z-10 w-full mt-5`}>
-                            <p className={`text-justify text-primary font-nunito text-sm lg:pr-8`}>
-                                About Us
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </section>
         </div>

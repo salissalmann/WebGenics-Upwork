@@ -19,7 +19,7 @@ export default function Contact() {
                             </div>
                             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
                                 <h2 className="title-font font-semibold text-white tracking-widest text-sm font-nunito">EMAIL</h2>
-                                <a className="text-gray-300 leading-relaxed font-nunito">info@webgenics.com</a>
+                                <a className="text-gray-300 leading-relaxed font-nunito">inquiry@webgenicsitsolutions.com</a>
                                 <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4 font-nunito">PHONE</h2>
                                 <p className="leading-relaxed text-gray-300 font-nunito">+60-11-3769-0939</p>
                             </div>

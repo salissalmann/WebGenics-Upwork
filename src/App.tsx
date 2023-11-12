@@ -10,11 +10,10 @@ import UIUX from "./Pages/UI-UX";
 import Publications from "./Pages/Publications";
 import Animations from "./Pages/Animations";
 import Consultation from './Pages/Consultation'
+import Portfolio from "./Pages/Portfolio";
+import Quotation from "./Pages/Quotation";
+
 function App() {
-
-
-
-
   return (
     <div className="App">
       <BrowserRouter>
@@ -44,6 +43,12 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/consultation" element={<Consultation />} />
+        </Routes>
+        <Routes>
+          <Route path="/portfolio" element={<Portfolio />} />
+        </Routes>
+        <Routes>
+          <Route path="/quotation" element={<Quotation />} />
         </Routes>
       </BrowserRouter>
       <div className="fixed bottom-4 right-4 z-50">

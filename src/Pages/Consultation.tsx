@@ -49,8 +49,12 @@ export default function Teams() {
                     </div>
                     <div className="space-y-8 lg:grid lg:grid-cols-2 sm:gap-6 xl:gap-10 lg:space-y-0">
                         <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 rounded-lg border-4 border-secondary-300 shadow backdrop-blur-lg bg-white/10">
-                            <h3 className="mb-4 text-3xl font-semibold text-white">Vital</h3>
-                            <p className="font-light text-gray-500 sm:text-lg dark:text-white font-nunito">
+                            <div className="flex flex-row justify-center gap-5 items-center">
+                                <img width="50" height="50" src="https://img.icons8.com/external-others-cattaleeya-thongsriphong/64/000000/external-Online-Consultation-online-healthcare-outline-others-cattaleeya-thongsriphong.png" alt="external-Online-Consultation-online-healthcare-outline-others-cattaleeya-thongsriphong" className='mt-[-1rem]' />
+                                <h3 className="mb-4 text-3xl font-semibold text-white">Vital</h3>
+
+                            </div>
+                            <p className="font-light text-white sm:text-lg  font-nunito">
                                 30 Minutes of consultation (recommanded for small businesses)
                             </p>
                             <div className="flex justify-center items-baseline my-8">
@@ -86,8 +90,12 @@ export default function Teams() {
                             </div>
                         </div>
                         <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 rounded-lg border-4 border-secondary-300 shadow backdrop-blur-lg bg-white/10">
-                            <h3 className="mb-4 text-3xl font-semibold text-white">Elite</h3>
-                            <p className="font-light text-gray-500 sm:text-lg dark:text-white font-nunito">
+                            <div className="flex flex-row justify-center gap-5 items-center">
+                                <img width="50" height="50" src="https://img.icons8.com/external-inipagistudio-lineal-color-inipagistudio/64/external-call-police-emergency-inipagistudio-lineal-color-inipagistudio.png" alt="external-call-police-emergency-inipagistudio-lineal-color-inipagistudio" className='mt-[-1rem]' />
+                                <h3 className="mb-4 text-3xl font-semibold text-white">Elite</h3>
+                            </div>
+
+                            <p className="font-light sm:text-lg text-white font-nunito">
                                 60 Minutes of consultation (recommanded for small businesses)
                             </p>
                             <div className="flex justify-center items-baseline my-8">

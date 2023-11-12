@@ -13,9 +13,11 @@ import Footer from "../../Components/Footer";
 import { loadFull } from "tsparticles";
 import { Particles } from 'react-tsparticles'
 import { Engine } from "tsparticles-engine";
-
+import { useNavigate } from "react-router-dom";
 export default function Homepage(this: any) {
     window.scrollTo(0, 0);
+
+    const navigate = useNavigate()
 
     const particlesInit = useCallback(async (engine: Engine) => {
         await loadFull(engine)
@@ -144,7 +146,9 @@ export default function Homepage(this: any) {
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.75 }}
                         >
-                            <button className="inline-flex items-center bg-secondary-100 border-0 text-white text-sm py-2 px-4 f rounded-2xl md:mt-0 mt-2">
+                            <button className="inline-flex items-center bg-secondary-100 border-0 text-white text-sm py-2 px-4 f rounded-2xl md:mt-0 mt-2"
+                                onClick={() => navigate('/quotation')}
+                            >
                                 Get in Touch
                             </button>
                         </motion.div>

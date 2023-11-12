@@ -32,7 +32,7 @@ export default function Teams() {
             </div >
 
             <section className="flex flex-col items-center justify-center text-gray-600 font-nunito">
-                <div className="container px-2 py-24 mx-auto lg:w-3/4">
+                <div className="container px-2 py-4 mt-9 mx-auto lg:w-3/4">
                     <div className="flex flex-col text-center w-full mb-4">
                         <h1
                             className="sm:text-3xl text-3xl font-medium title-font mb-4 text-secondary-300"
@@ -46,6 +46,66 @@ export default function Teams() {
                         alt="Webgenics Logo"
                         className="w-full"
                     />
+                </div>
+            </section>
+
+
+            <section className="flex items-center xl:h-screen font-poppins">
+                <div className="justify-center flex-1 max-w-6xl px-4 py-6 mx-auto lg:py-0 lg:mt-[-5rem] md:px-6">
+                    <div className="mb-10 text-center">
+                        <span
+                            className="block mb-2 text-xs font-semibold leading-4 tracking-widest text-center text-blue-500 uppercase">
+                            Our Team
+                        </span>
+                        <h1 className="text-3xl font-bold capitalize dark:text-gray-900 mb-2">"Meet Our Leadership"</h1>
+                        <span
+                            className="block mb-4 text-xs font-semibold leading-4 tracking-widest text-center text-gray-600 uppercase">
+                            The webgenics is focused on creating an environment where we can face your biggest challenges together and have a truly rewarding experience.
+                        </span>
+
+                    </div>
+                    <div className="flex flex-wrap justify-center ">
+                        <div className="w-full px-4 mb-32 lg:w-1/3 md:w-1/2 lg:mb-0">
+                            <div className="relative">
+                                <div className="w-full h-80">
+                                    <img src="/assets/HaiderAli.png" alt=""
+                                        className="object-cover w-full h-full lg:rounded-2xl" />
+                                </div>
+                                <div
+                                    className="absolute w-full p-6 text-center bg-blue-900 lg:rounded-tl-full lg:right-0 lg:-mt-16 lg:w-72">
+                                    <h2 className="mb-1 text-xl font-bold text-gray-200 ">Haider Ali</h2>
+                                    <p className="text-sm text-gray-300">Chief Business Officer [C.B.O]</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-full px-4 mb-32 lg:w-1/3 md:w-1/2 lg:mb-0">
+                            <div className="relative">
+                                <div className="w-full h-80">
+                                    <img src="/assets/TalhaHussain.png" alt=""
+                                        className="object-cover w-full h-full lg:rounded-2xl" />
+                                </div>
+                                <div
+                                    className="absolute w-full p-6 text-center bg-blue-900 lg:rounded-tl-full lg:right-0 lg:-mt-16 lg:w-72">
+                                    <h2 className="mb-1 text-xl font-bold text-gray-200 ">Talha Hussain</h2>
+                                    <p className="text-sm text-gray-300">Chief Technology Officer [C.T.O]</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-full px-4 mb-32 lg:w-1/3 md:w-1/2 lg:mb-0">
+                            <div className="relative">
+                                <div className="w-full h-80">
+                                    <img src="/assets/AliAmmar.png" alt=""
+                                        className="object-cover w-full h-full lg:rounded-2xl" />
+                                </div>
+                                <div
+                                    className="absolute w-full p-6 text-center bg-blue-900 lg:rounded-tl-full lg:right-0 lg:-mt-16 lg:w-72">
+                                    <h2 className="mb-1 text-xl font-bold text-gray-200 ">Ali Ammar</h2>
+                                    <p className="text-sm text-gray-300">Chief Operating Officer [C.O.O]</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </section>
 
@@ -125,66 +185,6 @@ export default function Teams() {
                 </div>
 
             </div>
-
-            <section className="text-gray-600 body-font">
-                <div className="container px-5 py-24 mx-auto">
-                    <h1 className="text-3xl font-medium title-font text-gray-900 mb-2 text-center font-nunito">We are a team of 50+ IT Professionals</h1>
-                    <p className="text-sm font-medium title-font text-gray-900 mb-12 text-center">
-                        The webgenics is focused on creating an environment where we can face your biggest challenges together and have a truly rewarding experience.
-                    </p>
-                    <div className='flex flex-row justify-center'>
-                        <div className="flex flex-wrap -m-4 lg:w-2/3 justify-center">
-                            <div className="md:w-1/3">
-                                <div className="flex flex-col justify-center items-center h-full pt-4 rounded">
-                                    <img
-                                        src="/assets/HaiderAli.png"
-                                        alt="Webgenics Haider Ali"
-                                        className="w-80 h-80"
-                                    />
-                                    <span className="flex-grow flex flex-col pl-4  bg-gray-100 w-80 pt-2 pb-2">
-                                        <span className="title-font font-medium text-gray-900">Haider Ali</span>
-                                        <span className="text-gray-500 text-sm">
-                                            Chief Business Officer
-                                            [ CBO ] </span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div className="md:w-1/3 ">
-                                <div className="flex flex-col justify-center items-center h-full pt-4 rounded">
-                                    <img
-                                        src="/assets/TalhaHussain.png"
-                                        alt="Webgenics Haider Ali"
-                                        className="w-80 h-80"
-                                    />
-                                    <span className="flex-grow flex flex-col pl-4  bg-gray-100 w-80 pt-2 pb-2">
-                                        <span className="title-font font-medium text-gray-900">Muhammad Talha Hussain</span>
-                                        <span className="text-gray-500 text-sm">
-                                            Chief Technology Officer
-                                            [ CTO ]</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div className="md:w-1/3 ">
-                                <div className="flex flex-col justify-center items-center h-full pt-4 rounded">
-                                    <img
-                                        src="/assets/AliAmmar.png"
-                                        alt="Webgenics Haider Ali"
-                                        className="w-80 h-80"
-                                    />
-                                    <span className="flex-grow flex flex-col pl-4  bg-gray-100 w-80 pt-2 pb-2">
-                                        <span className="title-font font-medium text-gray-900">Ali Ammar</span>
-                                        <span className="text-gray-500 text-sm">
-                                            Chief Operating Officer
-                                            [ COO ] </span>
-                                    </span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
 
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-12 mx-auto">
