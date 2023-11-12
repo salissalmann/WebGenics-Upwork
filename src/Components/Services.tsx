@@ -105,7 +105,7 @@ const Services = () => {
                              z-10 w-full ${animations ? 'bg-[url("/assets/Animations.png")] object-center text-white' : 'bg-tertiary-100'}`}
                             onMouseEnter={() => setanimations(true)}
                             onMouseLeave={() => setanimations(false)}
-                            onClick={() => navigate('/animation-services')}
+                            onClick={() => navigate('/animations')}
                         >
                             <img width="50" height="50" src="https://img.icons8.com/fluency/48/animation-rig.png" alt="animation-rig" />
                             <h1 className={`tracking-widest text-2xl font-oxygen ${animations ? 'text-white' : "text-black"} mb-1 mt-3`}>
