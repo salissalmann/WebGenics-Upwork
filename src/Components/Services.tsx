@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Services = () => {
@@ -10,10 +10,6 @@ const Services = () => {
     const [publications, setpublications] = useState(false)
     const [animations, setanimations] = useState(false)
     const [consult, setconsult] = useState(false)
-
-
-
-
     return (
         <section className="flex flex-col items-center justify-center text-gray-600 font-nunito">
             <div className="container px-2 py-24 mx-auto w-3/4">
