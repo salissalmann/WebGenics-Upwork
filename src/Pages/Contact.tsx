@@ -1,9 +1,104 @@
+import { useEffect } from 'react';
 import Footer from '../Components/Footer'
 import Navigation from '../Components/Navigation'
+import emailjs from '@emailjs/browser';
+import { notification } from 'antd';
+import { useState } from 'react';
 
 
 export default function Contact() {
-    window.scrollTo(0, 0);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
+
+    const [form, setForm] = useState({ name: "", email: "", message: "" })
+    const [clicked, setClicked] = useState(false)
+
+
+    const handleChange = (
+        e:
+            | React.ChangeEvent<HTMLInputElement>
+            | React.ChangeEvent<HTMLTextAreaElement>
+    ) => {
+        setForm({ ...form, [e.target.name]: e.target.value })
+        setClicked(false)
+    }
+
+
+    useEffect(() => emailjs.init("_mbbXu9un3XkRC5I2"), []);
+
+    const submit = (e:
+        | React.MouseEvent<HTMLButtonElement, MouseEvent>
+    ) => {
+        e.preventDefault();
+        setClicked(true)
+        if (!form.email.includes('@')) {
+            notification.error({
+                message: 'Error!',
+                description: 'Please enter a valid email address.'
+            })
+            setClicked(false)
+            return
+        }
+        //Phone Validation
+        if (form.email === '') {
+            notification.error({
+                message: 'Error!',
+                description: 'Please enter your email.'
+            })
+            setClicked(false)
+            return
+        }
+
+        if (form.message === '') {
+            notification.error({
+                message: 'Error!',
+                description: 'Please enter your message.'
+            })
+            setClicked(false)
+            return
+        }
+
+        if (form.name === '') {
+            notification.error({
+                message: 'Error!',
+                description: 'Please enter your name.'
+            })
+            setClicked(false)
+            return
+        }
+
+        notification.info(
+            {
+                message: 'Sending your request...'
+            }
+        )
+
+
+
+        emailjs.send("service_xaaj5nb", "template_6rs47jc", {
+            name: form.name,
+            email: form.email,
+            message: form.message,
+        }).then(() => {
+            notification.success({
+                message: 'Request sent!',
+                description: 'We have received your request. We will contact you soon.'
+            })
+            setForm({
+                name: '',
+                email: '',
+                message: '',
+            });
+        }).catch(() => {
+            notification.error({
+                message: 'Error!',
+                description: 'There was an error sending your request. Please try again later.'
+            })
+        });
+        setClicked(false)
+    }
 
     return (
         <>
@@ -32,17 +127,29 @@ export default function Contact() {
                         </p>
                         <div className="relative mb-4">
                             <label htmlFor="name" className="leading-7 text-sm text-gray-600">Name</label>
-                            <input type="text" id="name" name="name" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                            <input type="text" id="name" name="name" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                onChange={handleChange}
+                                value={form.name}
+                            />
                         </div>
                         <div className="relative mb-4">
                             <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
-                            <input type="email" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                            <input type="email" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                onChange={handleChange}
+                                value={form.email}
+                            />
                         </div>
                         <div className="relative mb-4">
                             <label htmlFor="message" className="leading-7 text-sm text-gray-600">Message</label>
-                            <textarea id="message" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                            <textarea id="message" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                                onChange={handleChange}
+                                value={form.message}
+                            ></textarea>
                         </div>
-                        <button className="text-white bg-secondary-300 font-nunito border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                        <button className="text-white bg-secondary-300 font-nunito border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                            onClick={submit}
+                            disabled={clicked}
+                        >
                             Lets Connect
                         </button>
                         <p className="text-xs text-gray-500 mt-3">We will get back to you within 24 hours.</p>

@@ -3,7 +3,8 @@
 import React, { useEffect, useState } from 'react'
 import Footer from '../Components/Footer'
 import Navigation from '../Components/Navigation'
-//import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
+import { notification } from 'antd';
 
 
 export default function Quotation() {
@@ -12,7 +13,7 @@ export default function Quotation() {
     }, [])
 
 
-    const [form, setForm] = useState({ firstName: "", lastName: "", phone: "", company: "", email: "", message: "" })
+    const [form, setForm] = useState({ firstName: "", lastName: "", phone: "", company: "", email: "", message: "", service: "" })
     const [clicked, setClicked] = useState(false)
 
 
@@ -20,14 +21,14 @@ export default function Quotation() {
         e:
             | React.ChangeEvent<HTMLInputElement>
             | React.ChangeEvent<HTMLTextAreaElement>
+            | React.ChangeEvent<HTMLSelectElement>
     ) => {
         setForm({ ...form, [e.target.name]: e.target.value })
         setClicked(false)
     }
 
 
-    /*
-    useEffect(() => emailjs.init("VdQ-GDMozP9PtJFXL"), []);
+    useEffect(() => emailjs.init("_mbbXu9un3XkRC5I2"), []);
 
     const submit = (e:
         | React.MouseEvent<HTMLButtonElement, MouseEvent>
@@ -94,6 +95,14 @@ export default function Quotation() {
             setClicked(false)
             return
         }
+        if (form.service === '') {
+            notification.error({
+                message: 'Error!',
+                description: 'Please select a service.'
+            })
+            setClicked(false)
+            return
+        }
 
         if (form.company === '') {
             notification.error({
@@ -112,12 +121,13 @@ export default function Quotation() {
 
 
 
-        emailjs.send("service_079uq4t", "template_73saxla", {
+        emailjs.send("service_xaaj5nb", "template_xcjp1vs", {
             firstName: form.firstName,
             lastName: form.lastName,
             email: form.email,
             phone: form.phone,
             message: form.message,
+            service: form.service,
             company: form.company
         }).then(() => {
             notification.success({
@@ -130,6 +140,7 @@ export default function Quotation() {
                 email: '',
                 phone: '',
                 message: '',
+                service: '',
                 company: ''
             });
         }).catch(() => {
@@ -140,8 +151,6 @@ export default function Quotation() {
         });
         setClicked(false)
     }
-    */
-    const submit = () => { }
 
     return (
         <>
@@ -177,6 +186,25 @@ export default function Quotation() {
                                 Please send message for futher information! </h2>
                         </div>
                         <div className="flex flex-wrap mb-4 -mx-2">
+                            <div className="w-full px-2  mb-4 ">
+                                <select
+                                    className="w-full px-3 py-2 leading-loose border  bg-new-600 border-brown-700 text-gray-500"
+                                    required
+                                    name="service"
+                                    value={form.service}
+                                    onChange={handleChange}
+                                >
+                                    <option value="">Select Service</option>
+                                    <option value="Web Development">Web Development</option>
+                                    <option value="Mobile Development">Mobile Development</option>
+                                    <option value="UI/UX">UI/UX</option>
+                                    <option value="Publication Services">Publication Services</option>
+                                    <option value="Animations">Animations</option>
+                                    <option value="Consultation [Elite]">Consultation [Elite]</option>
+                                    <option value="Consultation [Vital]">Consultation [Vital]</option>
+                                </select>
+                            </div>
+
                             <div className="w-full px-2 mb-4 lg:mb-0 lg:w-1/2">
                                 <input
                                     className="w-full px-3 py-1 leading-loose border  bg-new-600 border-brown-700"
