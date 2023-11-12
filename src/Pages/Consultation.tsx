@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion'
 import Footer from '../Components/Footer'
 import Navigation from '../Components/Navigation'
+import { useNavigate } from 'react-router-dom';
 
 export default function Teams() {
     window.scrollTo(0, 0);
+
+    const navigate = useNavigate()
 
     return (
         <>
@@ -84,7 +87,9 @@ export default function Teams() {
                                 </li>
                             </ul>
                             <div className='flex justify-center'>
-                                <button className="w-1/3 items-center bg-primary border-0 text-white text-sm py-2 px-4 f rounded-2xl md:mt-0 mt-2">
+                                <button className="w-1/3 items-center bg-primary border-0 text-white text-sm py-2 px-4 f rounded-2xl md:mt-0 mt-2"
+                                    onClick={() => navigate('/quotation')}
+                                >
                                     Get Started
                                 </button>
                             </div>
@@ -125,7 +130,9 @@ export default function Teams() {
                                 </li>
                             </ul>
                             <div className='flex justify-center'>
-                                <button className="w-1/3 items-center bg-primary border-0 text-white text-sm py-2 px-4 f rounded-2xl md:mt-0 mt-2">
+                                <button className="w-1/3 items-center bg-primary border-0 text-white text-sm py-2 px-4 f rounded-2xl md:mt-0 mt-2"
+                                    onClick={() => navigate('/quotation')}
+                                >
                                     Get Started
                                 </button>
                             </div>

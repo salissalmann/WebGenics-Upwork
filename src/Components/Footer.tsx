@@ -128,7 +128,7 @@ export default function Footer() {
                         <h2 className="title-font font-medium text-white font-nunito tracking-widest text-lg mb-3">Company</h2>
                         <nav className="list-none mb-10">
                             <li className="pb-1">
-                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin" onClick={() => navigate('/company')}>Team</a>
+                                <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin" onClick={() => navigate('/teams')}>Team</a>
                             </li>
                             <li className="pb-1">
                                 <a className="text-white cursor-pointer hover:text-gray-400 font-nunito font-thin" onClick={() => navigate('/portfolio')}>Portfolio</a>

@@ -225,6 +225,7 @@ export default function Navigation() {
                                             <div className='text-gray-900 font-oxygen font-bold border
                                         shadow w-full text-center p-2 border-secondary-300
                                         '
+                                                onClick={() => { handleOptionSelect('/portfolio') }}
                                             >Portfolio</div>
                                         </div>
                                         <div className='flex flex-col p-3 items-center'>
