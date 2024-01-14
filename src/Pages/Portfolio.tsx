@@ -14,7 +14,7 @@ export default function Portfolio() {
 
             <section className="py-16 bg-gray-100 font-poppins ">
                 <div className="justify-center flex-1 max-w-5xl px-4 py-4 mx-auto lg:py-10 md:px-7">
-                    <div className="max-w-xl mx-auto">
+                    <div className="max-w-xl mx-auto mt-12">
                         <div className="text-center border-b-2 border-primary">
                             <div className="relative flex flex-col items-center ">
                                 <div

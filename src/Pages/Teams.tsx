@@ -69,11 +69,11 @@ export default function Teams() {
                             <div className="relative">
                                 <div className="w-full h-80">
                                     <img src="/assets/HaiderAli.png" alt=""
-                                        className="object-cover w-full h-full lg:rounded-2xl" />
+                                        className="object-cover w-full h-full rounded-full" />
                                 </div>
                                 <div
-                                    className="absolute w-full p-6 text-center bg-blue-900 lg:rounded-tl-full lg:right-0 lg:-mt-16 lg:w-72">
-                                    <h2 className="mb-1 text-xl font-bold text-gray-200 ">Haider Ali</h2>
+                                    className="absolute w-full p-6 text-center bg-blue-900 rounded-full lg:right-0 lg:-mt-16 lg:w-72">
+                                    <h2 className="mb-1 text-lg font-bold text-gray-200 ">Haider Ali</h2>
                                     <p className="text-sm text-gray-300">Chief Business Officer [C.B.O]</p>
                                 </div>
                             </div>
@@ -82,11 +82,11 @@ export default function Teams() {
                             <div className="relative">
                                 <div className="w-full h-80">
                                     <img src="/assets/TalhaHussain.png" alt=""
-                                        className="object-cover w-full h-full lg:rounded-2xl" />
+                                        className="object-cover w-full h-full rounded-full" />
                                 </div>
                                 <div
-                                    className="absolute w-full p-6 text-center bg-blue-900 lg:rounded-tl-full lg:right-0 lg:-mt-16 lg:w-72">
-                                    <h2 className="mb-1 text-xl font-bold text-gray-200 ">Talha Hussain</h2>
+                                    className="absolute w-full p-6 text-center bg-blue-900 rounded-full lg:right-0 lg:-mt-16 lg:w-72">
+                                    <h2 className="mb-1 text-lg font-bold text-gray-200 ">Talha Hussain</h2>
                                     <p className="text-sm text-gray-300">Chief Technology Officer [C.T.O]</p>
                                 </div>
                             </div>
@@ -94,12 +94,12 @@ export default function Teams() {
                         <div className="w-full px-4 mb-32 lg:w-1/3 md:w-1/2 lg:mb-0">
                             <div className="relative">
                                 <div className="w-full h-80">
-                                    <img src="/assets/AliAmmar.png" alt=""
-                                        className="object-cover w-full h-full lg:rounded-2xl" />
+                                    <img src="/assets/AliAmmar.jpg" alt=""
+                                        className="object-cover w-full h-full rounded-full" />
                                 </div>
                                 <div
-                                    className="absolute w-full p-6 text-center bg-blue-900 lg:rounded-tl-full lg:right-0 lg:-mt-16 lg:w-72">
-                                    <h2 className="mb-1 text-xl font-bold text-gray-200 ">Ali Ammar</h2>
+                                    className="absolute w-full p-6 text-center bg-blue-900 rounded-full lg:right-0 lg:-mt-16 lg:w-72">
+                                    <h2 className="mb-1 text-lg font-bold text-gray-200 ">Ali Ammar</h2>
                                     <p className="text-sm text-gray-300">Chief Operating Officer [C.O.O]</p>
                                 </div>
                             </div>

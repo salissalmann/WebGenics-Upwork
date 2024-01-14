@@ -155,6 +155,13 @@ export default function Homepage(this: any) {
                     </div>
                 </div>
             </div >
+            <div className="messageSlider">
+                <p className="message text-center text-white font-oxygen text-md mt-2 mb-4">
+                    "At our software house, we cherish open collaboration. Your active involvement in the project development journey is key. Together, we create exceptional software solutions tailored to your needs." 
+                </p>
+            </div>
+
+            {/*
 
             <motion.section
                 variants={staggerChildren}
@@ -164,6 +171,9 @@ export default function Homepage(this: any) {
             >
                 <CounterSection />
             </motion.section>
+            */}
+
+
 
             <motion.section
                 variants={staggerChildren}
@@ -251,3 +261,4 @@ export default function Homepage(this: any) {
         </>
     )
 }
+

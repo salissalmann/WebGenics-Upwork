@@ -79,8 +79,6 @@ export default function Homepage() {
     );
 
     function renderCounter(currentCount: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined, targetCount: number, label: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined, animationControls: boolean | AnimationControls | VariantLabels | TargetAndTransition | undefined) {
-        console.log(targetCount)
-        console.log(animationControls)
 
         return (
             <motion.article

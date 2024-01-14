@@ -157,7 +157,7 @@ export default function Quotation() {
             <Navigation />
             <section className="py-16 bg-new-600 font-rajdhani dark:bg-new-600">
                 <div className="justify-center flex-1 max-w-5xl px-4 py-4 mx-auto lg:py-10 md:px-7">
-                    <div className="max-w-xl mx-auto">
+                    <div className="max-w-xl mx-auto mt-12">
                         <div className="text-center ">
                             <div className="relative flex flex-col items-center">
                                 <div
