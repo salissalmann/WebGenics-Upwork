@@ -1,19 +1,18 @@
+import { motion } from "framer-motion";
 import { useCallback } from "react";
-import { motion } from "framer-motion"
-import Navigation from "../../Components/Navigation";
-import CounterSection from "../../Components/CounterSection";
-import Services from "../../Components/Services";
-import Offerings from "../../Components/OfferingSection";
-import ReviewSection from "../../Components/ReviewSection";
-import TechnicalSection from "../../Components/TechnicalBenfits";
-import Projects from "../../Components/Projects";
-import Steps from "../../Components/Steps";
+import { useNavigate } from "react-router-dom";
+import { Particles } from 'react-tsparticles';
+import { loadFull } from "tsparticles";
+import { Engine } from "tsparticles-engine";
 import FAQs from "../../Components/FAQs";
 import Footer from "../../Components/Footer";
-import { loadFull } from "tsparticles";
-import { Particles } from 'react-tsparticles'
-import { Engine } from "tsparticles-engine";
-import { useNavigate } from "react-router-dom";
+import Navigation from "../../Components/Navigation";
+import Offerings from "../../Components/OfferingSection";
+import Projects from "../../Components/Projects";
+import ReviewSection from "../../Components/ReviewSection";
+import Services from "../../Components/Services";
+import Steps from "../../Components/Steps";
+import TechnicalSection from "../../Components/TechnicalBenfits";
 export default function Homepage(this: any) {
     window.scrollTo(0, 0);
 
